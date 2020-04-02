@@ -34,7 +34,7 @@ public class PasswordGenerator {
 		for (int i = 0; i < passwordLength; i++) {
 
 			/*
-			 * if want to it more random 
+			 * if want to make it more random 
 			 * int moreRandomValue = secureRandom.nextInt(PASSWORD_BASE_MORE.length()); 
 			 * char moreRandomChar = PASSWORD_BASE_MORE.charAt(moreRandomValue);
 			 * returnedPassword.append(moreRandomChar);
@@ -47,6 +47,7 @@ public class PasswordGenerator {
 
 	}
 
+	//if want to make it more random
 	public static String makeItMoreRandom(String passwordBase) {
 		List<String> letterList = Arrays.asList(passwordBase.split(""));
 		Collections.shuffle(letterList);
